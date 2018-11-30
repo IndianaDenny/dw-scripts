@@ -22,13 +22,13 @@ function dwSuperSearch(engine,query){
   let searchStr = "";
  
   //if alexa
-  if (engine =="alexa" || engine == "alexa") {
+  if (engine =="Alexa" || engine == "alexa") {
     //the search string
     searchStr =  alexa + query;    
   }
   
       //if archive
-  if (engine =="archive" || engine == "archive") {
+  if (engine =="Archive" || engine == "archive") {
     //the search string
     searchStr =  archive + query;    
   }
@@ -40,46 +40,63 @@ function dwSuperSearch(engine,query){
       }
   
   //if dogpile
-  if (engine =="dogpile" || engine == "Dogpile") {
+  if (engine =="Dogpile" || engine == "dogpile") {
     //the search string
     searchStr =  dogpile + query;    
   }
   
     //if duckduckgo
-  if (engine =="duckduckgo" || engine == "duckduckgo") {
+  if (engine =="Duckduckgo" || engine == "duckduckgo") {
     //the search string
     searchStr =  duckduckgo + query;    
   }
   
         //if gigablast
-  if (engine =="gigablast" || engine == "gigablast") {
+  if (engine =="Gigablast" || engine == "gigablast") {
     //the search string
     searchStr =  gigablast + query;    
   }
     
         //if shodan
-  if (engine =="shodan" || engine == "shodan") {
+  if (engine =="Shodan" || engine == "shodan") {
     //the search string
     searchStr =  shodan + query;    
   }
   
       //if google
-  if (engine =="google" || engine == "google") {
+  if (engine =="Google" || engine == "google") {
     //the search string
     searchStr =  google + query;    
   }
   
       //if yahoo
-  if (engine =="yahoo" || engine == "yahoo") {
+  if (engine =="Yahoo" || engine == "yahoo") {
     //the search string
     searchStr =  yahoo + query;    
   }
   
     //if yandex
-  if (engine =="yandex" || engine == "yandex") {
+  if (engine =="Yandex" || engine == "yandex") {
     //the search string
     searchStr =  yandex + query;    
   }
+  
+  
+   //if wikipedia
+   if (engine == "Wikipedia" || engine == "wikipedia") {
+       //the search string
+       searchStr = wikipedia + query;
+   }
+  
+  
+  
+  
+  return searchStr;
+   //set the .href in sLink
+ 
+  
+}
+
   
   
   
